@@ -52,7 +52,7 @@ goto boot
 
 :boot
 imgfree
-kernel http://${mirror}/${dir}/images/pxeboot/vmlinuz repo=http://${mirror}/${dir} ${params} ${console} initrd=initrd.img modprobe.blacklist=nouveau
+kernel http://${mirror}/${dir}/images/pxeboot/vmlinuz repo=http://${mirror}/${dir} ${params} ${console} initrd=initrd.img modprobe.blacklist=nouveau inst.xdriver=intel
 initrd http://${mirror}/${dir}/images/pxeboot/initrd.img
 echo
 echo MD5sums:
